@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #77c7df;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid;
+  background: #107174;
+}
+
+form, .projects {
+  max-width: 615px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+form h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 15px 0 8px;
+}
+
+form input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+textarea {
+  height: 90px;
+}
+
+button {
+  width: 130px;
+  padding: 8px;
+  background: rgb(16, 230, 87);
+  border: 1px solid;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.projects > input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 7px
+}
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.image {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  border: 1px solid;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+  font-size: 65px;
+}
+
+article h2 {
+  font-weight: normal;
+}
+
+@media (max-width: 650px) {
+  form, .projects {
+    margin: 20px 12px;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+
+}
